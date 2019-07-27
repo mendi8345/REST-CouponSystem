@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Coupon System Login</title>
+		
+		<!---- design the LOGIN page ---->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/CouponSystemStyle.css">
+	</head>
+
+	<body>
+		<header>
+			<h1><i class="fa fa-user-circle-o" style="font-size:50px; color:red;"></i> Login to the Coupon system</h1><hr/>
+		</header>
+		
+		<!---- the Login Form ---->
+		<div id="loginForm">
+		  <form action="login" method="post">
+		  	<h3>Please fill your name and password:</h3>
+		    <label for="name">Name</label>
+		    <input type="text" id="name" name="name" placeholder="Enter Your Name...">
+		
+		   	<label for="pass">Password</label>
+		    <input type="password" id="pass" name="pass" placeholder="Enter Your password...">
+		
+		    <label for="type">choose your Client Type:</label>
+		    <select id="type" name="type">
+		        <option value="admin">Admin</option>
+				<option value="company">Company</option>
+				<option value="customer">Customer</option>
+		    </select>
+		  
+		  	<h3><button type="submit" class="button">LOGIN 	<i class="fa fa-user-circle-o" style="font-size:30px;"></i></button>
+				<button type="reset" class="button"	>RESET	<i class="fa fa-eraser" style="font-size:30px;"></i></button></h3>
+		  
+		  </form>
+		</div>
+	</body>
+</html>
